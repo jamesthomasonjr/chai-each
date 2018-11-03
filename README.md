@@ -1,5 +1,5 @@
 # Chai Each
-A [Chai](http://chaijs.com/) plugin that allows for assertions on each item is an array
+A [Chai](http://chaijs.com/) plugin that allows for assertions on each item in an array
 
 Chai Each was inspired by [Chai Things](http://github.com/chaijs/chai-things)
 
