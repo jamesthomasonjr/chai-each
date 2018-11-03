@@ -1,0 +1,15 @@
+{
+  "name": "chai-each",
+  "version": "0.0.1",
+  "author": "James Thomason, Jr <james@thomason.email> (http://jamesthomasonjr.com/)",
+  "keywords": ["chai", "chai-plugin", "array", "each"],
+  "main": "./lib/chai-each.js",
+  "typings": "./@types/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jamesthomasonjr/chai-each.git"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2"
+  }
+}
