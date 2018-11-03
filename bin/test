@@ -1,0 +1,21 @@
+#!/usr/bin/env node
+
+const chai     = require('chai');
+const chaiEach = require('..');
+const Mocha    = require('mocha');
+const path     = require('path');
+
+chai.use(chaiEach);
+
+const mocha = new Mocha();
+
+const testDirectory  = path.join(__dirname, '..', 'test');
+const testExtensions = ['test.js'];
+const testFiles      = Mocha.utils.files(testDirectory, testExtensions);;
+
+testFiles.forEach(file => mocha.addFile(file));
+
+mocha.run(function(failures){
+  process.exitCode = !!failures;
+});
+
